@@ -1,16 +1,28 @@
-# Laravel Vue spa init project
+# Laravel Vue SPA 初始空白專案
 
-請依序運行以下指令以啟動網站：
+依序運行以下指令即可啟動網站：
 
 ```shell
 touch database/spa.sqlite
 composer update
 npm install
+npm run dev
 php artisan migrate
 php artisan serve
 ```
 
-參考資料：https://blog.johnsonlu.org/building-a-vue-spa-with-laravel/
+## 相依套件、引入方式備註(不需執行)
+
+- laravel/ui
+  - `composer require laravel/ui`
+- vue
+  - `php artisan ui vue`
+- vue-router
+  - `npm install vue-router --save-dev`
+
+## 參考資料：
+
+https://blog.johnsonlu.org/building-a-vue-spa-with-laravel/
 
 
 <!--
